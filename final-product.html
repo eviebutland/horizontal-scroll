@@ -1,0 +1,116 @@
+<body>
+ <div class="horizontal-child">  
+      <div class="slide">
+          <div data-testid="goal-setting">
+              <div class="img"></div>
+              <p>Begin by defining clear, specific, and achievable goals with the client. Ensure these goals are aligned with their aspirations and values.</p>
+         </div>
+         <div data-testid="observation">
+              <p>Observe the client's current behaviours, habits, and thought patterns to identify strengths, areas for improvement, and potential obstacles.</p>
+              <div class="img"></div>
+         </div>
+         <div data-testid="learning">
+          <div class="img"></div>
+             <p>Collaborate with the client to create a personalized development plan outlining actionable steps and milestones towards their goals</p>
+          </div>
+          <div data-testid="development-plan">
+              <p>Provide relevant knowledge, tools, and resources to support the client's growth and development. Encourage continuous learning and skill enhancement. 
+              </p>
+              <div class="img"></div>
+          </div>
+      </div>    
+    </div>  
+</body>
+<style>
+#page {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.horizontal-child {
+-ms-overflow-style: none;
+  scrollbar-width: none; 
+  position: relative;
+  display: block;
+  
+  overflow: scroll;
+}
+.horizontal-child .slide {
+    top: 20px;
+    padding: 0rem 1rem 2rem;
+    justify-content: space-between;
+}
+
+.horizontal-child .slide div  {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    max-width: 600px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.horizontal-child .slide div .img {
+  width: 100%;
+  height: 200px;
+  margin: 30px 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.horizontal-child .slide div[data-testid="observation"], .horizontal-child .slide div[data-testid="development-plan"]  {
+    flex-direction: column-reverse;
+}
+@media screen and (min-width: 600px) {
+    .horizontal-child {
+        height: 96vw;
+        width: 64vh;
+        transform-origin: 100% 0%;
+        transform: rotate(-90deg) translateY(-57vh);
+    }  
+    .horizontal-child .slide {
+        width: 160vw;
+        display: flex;
+        position: absolute;
+        transform-origin: 0% 0%;
+        padding: 3rem 1rem 2rem;
+        transform: rotate(90deg) translateY(-100%);
+    } 
+    .horizontal-child .slide div[data-testid="development-plan"], 
+    .horizontal-child .slide div[data-testid="observation"]  {
+     flex-direction: column;
+    } 
+}
+.horizontal-child .slide div[data-testid="goal-setting"] .img {
+  background-image: url("https://static1.squarespace.com/static/6460da15489be44145b2e0ee/t/663f96eebb0a932dfb50c207/1715443440514/Screenshot+2024-05-11+at+17.03.17.png");
+}
+.horizontal-child .slide div[data-testid="observation"] .img {
+  background-image: url("https://static1.squarespace.com/static/6460da15489be44145b2e0ee/t/663f96ee5aa56d745f662d6b/1715443441321/Screenshot+2024-05-11+at+17.03.22.png");
+}
+.horizontal-child .slide div[data-testid="learning"] .img {
+  background-image: url("https://static1.squarespace.com/static/6460da15489be44145b2e0ee/t/663f96ee9706995486b093ec/1715443440599/Screenshot+2024-05-11+at+17.03.27.png");
+}
+.horizontal-child .slide div[data-testid="development-plan"] .img {
+  background-image: url("https://static1.squarespace.com/static/6460da15489be44145b2e0ee/t/663f96ee720bfb44ca429ae3/1715443441444/Screenshot+2024-05-11+at+17.03.33.png");
+}
+/* @media screen and (min-width: 600px) {
+  .fe-663f8255c144227dae6d63cc {
+  max-height: 600px;
+   --inset-padding: 0 !important;
+  }
+  .sqs-block-content#yui_3_17_2_1_1715444498465_68 {
+	height: 90px !important;
+  }
+} */
+</style>
+
+
+
+
+
+
+https://static1.squarespace.com/static/6460da15489be44145b2e0ee/t/663f96ee720bfb44ca429ae3/1715443441444/Screenshot+2024-05-11+at+17.03.33.png
+https://static1.squarespace.com/static/6460da15489be44145b2e0ee/t/663f96ee5aa56d745f662d6b/1715443441321/Screenshot+2024-05-11+at+17.03.22.png
+https://static1.squarespace.com/static/6460da15489be44145b2e0ee/t/663f96ee9706995486b093ec/1715443440599/Screenshot+2024-05-11+at+17.03.27.png
+https://static1.squarespace.com/static/6460da15489be44145b2e0ee/t/663f96eebb0a932dfb50c207/1715443440514/Screenshot+2024-05-11+at+17.03.17.png

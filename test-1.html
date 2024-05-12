@@ -1,0 +1,99 @@
+<body>
+
+    <section class="horizontal-scroll-wrapper squares">
+       <div data-testid="goal-setting">
+            <img src="https://static1.squarespace.com/static/6460da15489be44145b2e0ee/t/663f37dd68eb286cf5b33490/1715419104706/kimon-maritz-jl2T_E4tUyo-unsplash.jpg"/>
+            <p>Begin by defining clear, specific, and achievable goals with the client. Ensure these goals are aligned with their aspirations and values.</p>
+       </div>
+
+       <div data-testid="observation">
+            <p>Observe the client's current behaviours, habits, and thought patterns to identify strengths, areas for improvement, and potential obstacles.</p>
+            <img src="https://static1.squarespace.com/static/6460da15489be44145b2e0ee/t/663f37dd68eb286cf5b33490/1715419104706/kimon-maritz-jl2T_E4tUyo-unsplash.jpg"/>
+       </div>
+
+       <div data-testid="collaboration">
+           <img src="https://static1.squarespace.com/static/6460da15489be44145b2e0ee/t/663f37dd68eb286cf5b33490/1715419104706/kimon-maritz-jl2T_E4tUyo-unsplash.jpg"/>
+           <p>Collaborate with the client to create a personalized development plan outlining actionable steps and milestones towards their goals</p>
+        </div>
+
+        <div data-testid="development-plan">
+            <p>Provide relevant knowledge, tools, and resources to support the client's growth and development. Encourage continuous learning and skill enhancement. 
+            </p>
+            <img src="https://static1.squarespace.com/static/6460da15489be44145b2e0ee/t/663f37dd68eb286cf5b33490/1715419104706/kimon-maritz-jl2T_E4tUyo-unsplash.jpg"/>
+        </div>
+    </section>
+</body>
+
+<style>
+    /* .horizontal-scroll-wrapper {
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: space-between;
+        transform: rotate(-90deg);
+
+        /* transform:rotate(-90deg) translateY(-100px); */
+        /* transform-origin: right top; */
+        /* transform: rotate(90deg) translateY(-100%); */
+    /* } */
+    /* .horizontal-scroll-wrapper div {
+        margin-left: 20px; */
+        /* transform: rotate(90deg); */
+        /* transform-origin: right top; */
+    /* } */
+    .horizontal-scroll-wrapper img {
+        width: 100%;
+        height: 250px;
+    }
+    .horizontal-scroll-wrapper p {
+        text-align: center;
+    }  
+
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.horizontal-scroll-wrapper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+   width: calc(350px + 1px);
+  max-height: 1750px;
+  height: 1750px;
+  margin: 0;
+  padding-top: 1px;
+  background: #abc;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-350px);
+  transform-origin: right top;
+  & > div {
+    display: block;
+    padding: 5px;
+    background: #cab;
+    transform: rotate(90deg);
+    transform-origin: right top;
+  }
+}
+
+.squares {
+  padding: 250px 0 0 0;
+  /* & > div {
+    width: 250px;
+    height: 250px;
+    margin: 10px 0;
+  } */
+}
+</style>
