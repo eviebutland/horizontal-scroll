@@ -34,13 +34,16 @@
   scrollbar-width: none; 
   position: relative;
   display: block;
-  
+  width: 100vw;
   overflow: scroll;
 }
 .horizontal-child .slide {
     top: 20px;
     padding: 0rem 1rem 2rem;
     justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .horizontal-child .slide div  {
@@ -62,26 +65,28 @@
 .horizontal-child .slide div[data-testid="observation"], .horizontal-child .slide div[data-testid="development-plan"]  {
     flex-direction: column-reverse;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
     .horizontal-child {
         height: 96vw;
-        width: 64vh;
+        width: 350px;
         transform-origin: 100% 0%;
-        transform: rotate(-90deg) translateY(-57vh);
+        transform: rotate(-90deg) translateY(-300px); 
     }  
     .horizontal-child .slide {
-        width: 160vw;
+        width: 2850px;
         display: flex;
+        flex-direction: row;
         position: absolute;
         transform-origin: 0% 0%;
         padding: 3rem 1rem 2rem;
-        transform: rotate(90deg) translateY(-100%);
+        transform: rotate(90deg) translateY(-85%);
     } 
     .horizontal-child .slide div[data-testid="development-plan"], 
     .horizontal-child .slide div[data-testid="observation"]  {
      flex-direction: column;
     } 
 }
+
 .horizontal-child .slide div[data-testid="goal-setting"] .img {
   background-image: url("https://static1.squarespace.com/static/6460da15489be44145b2e0ee/t/663f96eebb0a932dfb50c207/1715443440514/Screenshot+2024-05-11+at+17.03.17.png");
 }
